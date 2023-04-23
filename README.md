@@ -34,8 +34,8 @@ The test results will be displayed in the console. You can also generate a detai
 mvn surefire-report:report
 
 This will generate a HTML report in the target/surefire-report folder.
-You can report test report in your browser
+You can download test report in your browser
 
 <img src="src/test/java/com/buggycar/resource/testreport.png" alt="Alt text" title="Optional title">
 
-if you want to run different browser in your own machine just change driver from chrome to firefox or safari in BaseTest.java
+if you want to run different browser in your own machine just change browser driver name from chrome to firefox or safari in BaseTest.java file.
