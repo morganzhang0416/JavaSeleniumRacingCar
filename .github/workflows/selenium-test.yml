@@ -1,48 +1,52 @@
-name: build
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Java CI with Maven
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ "main" ]
+
 jobs:
-  verify-format:
-    runs-on: ubuntu-latest
-    name: Verify Source Format
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: 11
-      - name: Verify Format and License
-        run: mvn spotless:check
   build:
-    name: Java ${{ matrix.java }} Maven Test on ${{ matrix.os }}
-    strategy:
-      matrix:
-        # Test against the LTS Java versions. TODO: add JDK18 when it becomes available.
-        java: [ 8.0.x, 11.0.x, 17.0.x ]
-        os: [ macos-latest, windows-latest, ubuntu-latest ]
-    runs-on: ${{ matrix.os }}
+
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: ${{ matrix.java }}
-      - name: Cache local Maven repository
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ matrix.java }}-${{ hashFiles('pom.xml', '**/pom.xml') }}
-      - name: Build with Maven
-        shell: bash
+    - name: Install Chrome
         run: |
-          if [ $(grep -E '^(8|11)\.' <<< '${{ matrix.java }}') ]; then
-            # some module doesn't compile on java platform lower than 17, need to skip them by specifying a profile
-            MODS_OVERRIDES='-pl !spring-aot'
-          fi
-          mvn -q -B --define=org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn $MODS_OVERRIDES clean test
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Install Chrome driver
+        run: |
+          LATEST_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          curl -L "https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip" -o chromedriver.zip
+          unzip chromedriver.zip
+          sudo mv chromedriver /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Set CHROMEDRIVER_PATH environment variable
+        run: echo "CHROMEDRIVER_PATH=/usr/local/bin/chromedriver" >> $GITHUB_ENV
+      - name: Update .env file with CHROMEDRIVER_PATH
+        run: echo "CHROMEDRIVER_PATH=$CHROMEDRIVER_PATH" >> .env
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
+    - name: Update dependency graph
+      uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
