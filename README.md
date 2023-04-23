@@ -11,7 +11,7 @@ Or
 Run the tests on your own machine -  follow the following steps. 
 
 ---
-
+(By the way screen recording of automation testing is available in src/test/java/com/buggycar/resource folder)
 Ensure that you have installed Java and Maven on your system. You can verify this by running the following commands in your terminal:
 
     java -version

@@ -2,124 +2,124 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-23T22:43:39 NZST" name="Surefire suite" finished-at="2023-04-23T22:44:07 NZST" duration-ms="28512">
+  <suite started-at="2023-04-24T00:29:49 NZST" name="Surefire suite" finished-at="2023-04-24T00:30:17 NZST" duration-ms="28022">
     <groups>
     </groups>
-    <test started-at="2023-04-23T22:43:39 NZST" name="Surefire test" finished-at="2023-04-23T22:44:07 NZST" duration-ms="28512">
+    <test started-at="2023-04-24T00:29:49 NZST" name="Surefire test" finished-at="2023-04-24T00:30:17 NZST" duration-ms="28022">
       <class name="com.buggycar.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-23T22:43:56 NZST" name="setUp" finished-at="2023-04-23T22:43:57 NZST" duration-ms="1021" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-24T00:30:05 NZST" name="setUp" finished-at="2023-04-24T00:30:06 NZST" duration-ms="907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-23T22:43:57 NZST" name="registerTest" finished-at="2023-04-23T22:43:58 NZST" duration-ms="1171" status="PASS">
+        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-24T00:30:06 NZST" name="registerTest" finished-at="2023-04-24T00:30:07 NZST" duration-ms="1715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-23T22:43:58 NZST" name="tearDown" finished-at="2023-04-23T22:43:58 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@1a38c59b]" started-at="2023-04-24T00:30:07 NZST" name="tearDown" finished-at="2023-04-24T00:30:07 NZST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.RegisterTest -->
       <class name="com.buggycar.LinkTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:39 NZST" name="setUp" finished-at="2023-04-23T22:43:41 NZST" duration-ms="1981" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:49 NZST" name="setUp" finished-at="2023-04-24T00:29:50 NZST" duration-ms="1627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:41 NZST" name="linkTest" finished-at="2023-04-23T22:43:41 NZST" duration-ms="668" status="PASS">
+        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:50 NZST" name="linkTest" finished-at="2023-04-24T00:29:51 NZST" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:41 NZST" name="tearDown" finished-at="2023-04-23T22:43:42 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:51 NZST" name="tearDown" finished-at="2023-04-24T00:29:51 NZST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:42 NZST" name="setUp" finished-at="2023-04-23T22:43:43 NZST" duration-ms="1064" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:51 NZST" name="setUp" finished-at="2023-04-24T00:29:52 NZST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:43 NZST" name="linkModelTest" finished-at="2023-04-23T22:43:43 NZST" duration-ms="632" status="PASS">
+        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:52 NZST" name="linkModelTest" finished-at="2023-04-24T00:29:53 NZST" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkModelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:43 NZST" name="tearDown" finished-at="2023-04-23T22:43:43 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:53 NZST" name="tearDown" finished-at="2023-04-24T00:29:53 NZST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:43 NZST" name="setUp" finished-at="2023-04-23T22:43:44 NZST" duration-ms="1059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:53 NZST" name="setUp" finished-at="2023-04-24T00:29:54 NZST" duration-ms="923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:44 NZST" name="linkOverallTest" finished-at="2023-04-23T22:43:45 NZST" duration-ms="649" status="PASS">
+        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:54 NZST" name="linkOverallTest" finished-at="2023-04-24T00:29:54 NZST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkOverallTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-23T22:43:45 NZST" name="tearDown" finished-at="2023-04-23T22:43:45 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@78a2da20]" started-at="2023-04-24T00:29:54 NZST" name="tearDown" finished-at="2023-04-24T00:29:54 NZST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.LinkTest -->
       <class name="com.buggycar.ProfileTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-23T22:43:52 NZST" name="setUp" finished-at="2023-04-23T22:43:53 NZST" duration-ms="1078" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-24T00:30:01 NZST" name="setUp" finished-at="2023-04-24T00:30:02 NZST" duration-ms="1036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-23T22:43:53 NZST" name="profileTest" finished-at="2023-04-23T22:43:56 NZST" duration-ms="2675" status="PASS">
+        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-24T00:30:02 NZST" name="profileTest" finished-at="2023-04-24T00:30:05 NZST" duration-ms="2485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-23T22:43:56 NZST" name="tearDown" finished-at="2023-04-23T22:43:56 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@448ff1a8]" started-at="2023-04-24T00:30:05 NZST" name="tearDown" finished-at="2023-04-24T00:30:05 NZST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.ProfileTest -->
       <class name="com.buggycar.VoteTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-23T22:43:58 NZST" name="setUp" finished-at="2023-04-23T22:43:59 NZST" duration-ms="1019" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-24T00:30:07 NZST" name="setUp" finished-at="2023-04-24T00:30:08 NZST" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="voteTest()[pri:10, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-23T22:43:59 NZST" name="voteTest" finished-at="2023-04-23T22:44:07 NZST" duration-ms="7754" status="PASS">
+        <test-method signature="voteTest()[pri:10, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-24T00:30:08 NZST" name="voteTest" finished-at="2023-04-24T00:30:16 NZST" duration-ms="8027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voteTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-23T22:44:07 NZST" name="tearDown" finished-at="2023-04-23T22:44:07 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.VoteTest@7f77e91b]" started-at="2023-04-24T00:30:16 NZST" name="tearDown" finished-at="2023-04-24T00:30:17 NZST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.VoteTest -->
       <class name="com.buggycar.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:45 NZST" name="setUp" finished-at="2023-04-23T22:43:46 NZST" duration-ms="1057" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:54 NZST" name="setUp" finished-at="2023-04-24T00:29:55 NZST" duration-ms="920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:46 NZST" name="correctCredentialTest" finished-at="2023-04-23T22:43:48 NZST" duration-ms="1480" status="PASS">
+        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:55 NZST" name="correctCredentialTest" finished-at="2023-04-24T00:29:57 NZST" duration-ms="1269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:48 NZST" name="tearDown" finished-at="2023-04-23T22:43:48 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:57 NZST" name="tearDown" finished-at="2023-04-24T00:29:57 NZST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:48 NZST" name="setUp" finished-at="2023-04-23T22:43:49 NZST" duration-ms="1052" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:57 NZST" name="setUp" finished-at="2023-04-24T00:29:58 NZST" duration-ms="1067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:49 NZST" name="wrongCredentialTest" finished-at="2023-04-23T22:43:50 NZST" duration-ms="766" status="PASS">
+        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:58 NZST" name="wrongCredentialTest" finished-at="2023-04-24T00:29:59 NZST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:50 NZST" name="tearDown" finished-at="2023-04-23T22:43:50 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:59 NZST" name="tearDown" finished-at="2023-04-24T00:29:59 NZST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:50 NZST" name="setUp" finished-at="2023-04-23T22:43:51 NZST" duration-ms="1072" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:29:59 NZST" name="setUp" finished-at="2023-04-24T00:30:00 NZST" duration-ms="933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:51 NZST" name="logoutTest" finished-at="2023-04-23T22:43:52 NZST" duration-ms="1296" status="PASS">
+        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:30:00 NZST" name="logoutTest" finished-at="2023-04-24T00:30:01 NZST" duration-ms="1322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-23T22:43:52 NZST" name="tearDown" finished-at="2023-04-23T22:43:52 NZST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@77e9807f]" started-at="2023-04-24T00:30:01 NZST" name="tearDown" finished-at="2023-04-24T00:30:01 NZST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
