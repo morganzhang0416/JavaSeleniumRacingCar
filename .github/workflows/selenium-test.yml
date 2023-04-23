@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Java CI with Maven and TestNG
 
 on:
   push:
@@ -41,3 +41,12 @@ jobs:
 
       - name: Run tests in headless mode
         run: mvn test -Dtestng.dtd.http=true -Dsurefire.headless=true
+
+      - name: Generate TestNG XML report
+        run: mvn surefire-report:report-only
+
+      - name: Publish TestNG report as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: testng-report
+          path: target/site/surefire-report.html
