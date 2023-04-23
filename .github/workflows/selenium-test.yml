@@ -1,21 +1,49 @@
-name: Java CI with Maven
+name: build
+
 on:
   push:
-    branches: [ master ]
+    branches: [ "master", "release-**" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master", "release-**" ]
+
 jobs:
+  verify-format:
+    runs-on: ubuntu-latest
+    name: Verify Source Format
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 11
+      - name: Verify Format and License
+        run: mvn spotless:check
   build:
-runs-on: ubuntu-latest
-steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name:  Install Google Chrome # Using shell script to install Google Chrome
-      run:   |
-              chmod +x ./scripts/InstallChrome.sh
-                          ./scripts/InstallChrome.sh 
-    - name: Build with Maven
-      run: mvn test --file pom.xml
+    name: Java ${{ matrix.java }} Maven Test on ${{ matrix.os }}
+    strategy:
+      matrix:
+        # Test against the LTS Java versions. TODO: add JDK18 when it becomes available.
+        java: [ 8.0.x, 11.0.x, 17.0.x ]
+        os: [ macos-latest, windows-latest, ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.java }}
+      - name: Cache local Maven repository
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ matrix.java }}-${{ hashFiles('pom.xml', '**/pom.xml') }}
+      - name: Build with Maven
+        shell: bash
+        run: |
+          if [ $(grep -E '^(8|11)\.' <<< '${{ matrix.java }}') ]; then
+            # some module doesn't compile on java platform lower than 17, need to skip them by specifying a profile
+            MODS_OVERRIDES='-pl !spring-aot'
+          fi
+          mvn -q -B --define=org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn $MODS_OVERRIDES clean test
