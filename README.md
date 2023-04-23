@@ -1,6 +1,6 @@
 ## Overview
 
-This project is a selenium framework. Its script is written in Java to test https://buggy.justtestit.org/. The procedure below should be executed via Mac. Steps might be different if you are using Windows.
+This project is a selenium framework. Its script is written in Java with Maven and TestNG to test https://buggy.justtestit.org/. The procedure below should be executed via Mac. Steps might be different if you are using Windows.
 
 ## two ways to excute the test
 
