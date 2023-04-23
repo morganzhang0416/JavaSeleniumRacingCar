@@ -2,10 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ "master", "release-**" ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ "master", "release-**" ]
-
+    branches: [ main, master ]
 jobs:
   verify-format:
     runs-on: ubuntu-latest
