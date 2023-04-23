@@ -4,7 +4,7 @@ This project is a selenium framework. Its script is written in Java to test http
 
 ## two ways to excute the test
 
-Run the tests in CI/CD - fork the repo to your github; with every pull and push, the tests will be executed in your GitHub Actions setup by .yml file.
+Run the tests in CI/CD - fork the repo to your github; with every pull and push, the tests will be executed in your GitHub Actions setup by .yml file. you can download and check test report in github action as well.
 
 Or
 
@@ -37,3 +37,5 @@ This will generate a HTML report in the target/surefire-report folder.
 You can report test report in your browser
 
 <img src="src/test/java/com/buggycar/resource/testreport.png" alt="Alt text" title="Optional title">
+
+if you want to run different browser in your own machine just change driver from chrome to firefox or safari in BaseTest.java
