@@ -1,10 +1,8 @@
 package com.buggycar;
 
 import org.testng.annotations.Test;
-import java.time.Duration;
-import org.openqa.selenium.By;
 import com.buggycar.pageobjects.LoginPage;
-import com.buggycar.utils.BaseTest;
+import com.buggycar.utils.Hook;
 import com.buggycar.utils.FileUtils;
 import com.buggycar.utils.WaitConditions;
 import io.github.cdimascio.dotenv.Dotenv;
@@ -12,39 +10,46 @@ import io.github.cdimascio.dotenv.DotenvBuilder;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
 
-public class LoginTest extends BaseTest{
-  
+public class LoginTest extends Hook{
+
+  LoginPage loginPage;
+  WaitConditions wait;
+  DotenvBuilder dotenvBuilder;
+  Dotenv dotenv;
+  String password;
+  String wrongPassword = "Gogo_123#";
+  String fileName;
+  String username;
+
+  public LoginTest(){
+
+    dotenvBuilder =  Dotenv.configure();
+    dotenv = dotenvBuilder.load();
+    password = dotenv.get("PASSWORD");
+    fileName = "username.txt";
+    username = FileUtils.readLastLine(fileName);
+  }
+
   //test correct credential
   @Test(priority = 1)
   public void correctCredentialTest(){
          
-    LoginPage loginPage = new LoginPage(driver);
-    WaitConditions wait = new WaitConditions(driver);
-    DotenvBuilder dotenvBuilder = Dotenv.configure();
-    Dotenv dotenv = dotenvBuilder.load();
-    String password = dotenv.get("PASSWORD");
+    loginPage = new LoginPage(driver);
+    wait = new WaitConditions(driver);
     // Navigate to homepage
     driver.get(baseUrl + "/");
-
-    String fileName = "username.txt";
-    String username = FileUtils.readLastLine(fileName);
-    System.out.println(username);
-
     // Type usrname into login form
-    loginPage.getUsernameInput().sendKeys(username);
+    loginPage.EnterUsername(username);
 
     // Type password into login form
-      
-    loginPage.getPasswordInput().sendKeys(password);
-          
- 
+    loginPage.EnterPassword(password);
+
     // click login button
-    loginPage.getLoginButton().click();
+    loginPage.ClickLoginButton();
     
-    wait.WaitLocatorClickable(By.linkText("Profile"),Duration.ofSeconds(8));
+    loginPage.WaitProfilePresent();
         
     // assert profile displayed that means login sucessfully
-
     assertTrue(loginPage.getProfileButton().isDisplayed());
    }
   
@@ -52,71 +57,55 @@ public class LoginTest extends BaseTest{
   @Test(priority = 2)
   public void wrongCredentialTest(){
          
-    LoginPage loginPage = new LoginPage(driver);
-    WaitConditions wait = new WaitConditions(driver);
+    loginPage = new LoginPage(driver);
+    wait = new WaitConditions(driver);
     // Navigate to homepage
     driver.get(baseUrl + "/");
 
-    String fileName = "username.txt";
-    String username = FileUtils.readLastLine(fileName);
-    System.out.println(username);
-
     // Type usrname into login form
-    loginPage.getUsernameInput().sendKeys(username);
+    loginPage.EnterUsername(username);
 
-    // Type wrong password into login form
-      
-    loginPage.getPasswordInput().sendKeys("Gogo_123#");
-          
- 
+    // Type wrong password into login form  
+    loginPage.EnterPassword(wrongPassword);
+  
     // click login button
-    loginPage.getLoginButton().click();
-    
-    wait.WaitLocatorVisibility(By.className("label-warning"),Duration.ofSeconds(8));
+    loginPage.ClickLoginButton();
+      
     String expectedMessage = "Invalid username/password";
     
     // wait for wain message element until 8s 
     
-    wait.WaitLocatorVisibility(By.className("label-warning"),Duration.ofSeconds(8));
+    loginPage.WaitInvalidLoginPresent();
+
       // assert successful infomation pop up
-    assertTrue(loginPage.getInvilidLoginMessage().isDisplayed(), "Success message is not displayed");
-    assertEquals(loginPage.getInvilidLoginMessage().getText().trim(), expectedMessage, "Success message text is not as expected");       
+    assertEquals(loginPage.getInvilidLoginMessage(), expectedMessage, "Success message text is not as expected");       
   }
 
   //test logout function
   @Test(priority = 3)
   public void logoutTest(){
 
-    LoginPage loginPage = new LoginPage(driver);
-    WaitConditions wait = new WaitConditions(driver);
-    DotenvBuilder dotenvBuilder = Dotenv.configure();
-    Dotenv dotenv = dotenvBuilder.load();
-    String password = dotenv.get("PASSWORD");
+    loginPage = new LoginPage(driver);
+    wait = new WaitConditions(driver);
     // Navigate to homepage
     driver.get(baseUrl + "/");
 
-    String fileName = "username.txt";
-    String username = FileUtils.readLastLine(fileName);
-    System.out.println(username);
-
     // Type usrname into login form
-    loginPage.getUsernameInput().sendKeys(username);
+    loginPage.EnterUsername(username);
 
-    // Type password into login form
-      
-    loginPage.getPasswordInput().sendKeys(password);
+    // Type password into login form      
+    loginPage.EnterPassword(password);
           
- 
     // click login button
-    loginPage.getLoginButton().click();
+    loginPage.ClickLoginButton();
     
-    wait.WaitLocatorClickable(By.linkText("Logout"),Duration.ofSeconds(8));
+    loginPage.WaitLogoutButtonPresent();
         
-    // assert profile displayed that means login sucessfully
-    loginPage.getLogoutButton().click();
+    // assert profile displayed that means logout sucessfully
+    loginPage.ClickLogoutButton();
 
-    wait.WaitLocatorVisibility(By.name("login"), Duration.ofSeconds(8));
+    loginPage.WaitLoginPresent();
 
-    assertTrue(loginPage.getLoginButton().isDisplayed());
+    assertTrue(loginPage.getElementLogin().isDisplayed());
    }
 }

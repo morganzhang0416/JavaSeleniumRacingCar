@@ -2,46 +2,52 @@ package com.buggycar.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.buggycar.utils.WaitConditions;
+import java.time.Duration;
 
 public class RegisterPage {
 
     private WebDriver driver;
+    public String expectedMessage ;
+    WaitConditions wait;
 
     public RegisterPage(WebDriver driver) {
         this.driver = driver;
+        expectedMessage = "Registration is successful";
+        wait = new WaitConditions(driver);
     }
 
-    public WebElement getUsernameInput() {
-        return driver.findElement(By.id("username"));
+    public void EnterUserName(String username) {
+        driver.findElement(By.id("username")).sendKeys(username);
     }
 
-    public WebElement getFristNameInput() {
-        return driver.findElement(By.id("firstName"));
+    public void EnterFristName(String firstName) {
+        driver.findElement(By.id("firstName")).sendKeys(firstName);
     }
 
-    public WebElement getLastNameInput() {
-        return driver.findElement(By.id("lastName"));
+    public void EnterLastName(String lastName) {
+        driver.findElement(By.id("lastName")).sendKeys(lastName);
     }
 
-    public WebElement getPasswordInput() {
-        return driver.findElement(By.id("password"));
+    public void EnterPassword(String password) {
+        driver.findElement(By.id("password")).sendKeys(password);
     }
 
-    public WebElement getConfirmPasswordInput() {
-        return driver.findElement(By.id("confirmPassword"));
-    }
-    
-    public WebElement getSubmitButton() {
-        return driver.findElement(By.className("btn-default"));
+    public void EnterConfirmPassword(String confirmPassword) {
+        driver.findElement(By.id("confirmPassword")).sendKeys(confirmPassword);
     }
 
-    public WebElement getSuccessMessage() {
-        return driver.findElement(By.cssSelector("div.result.alert.alert-success"));
+    public void ClickSubmitButton() {
+        driver.findElement(By.className("btn-default")).click();
     }
 
-    
-    
+    public void WaitSuccessMessage() {
+        wait.WaitLocatorVisibility(By.cssSelector("div.result.alert.alert-success"), Duration.ofSeconds(8));
+    }
+
+    public String getSuccessMessage() {
+        return driver.findElement(By.cssSelector("div.result.alert.alert-success")).getText().trim();
+    }    
     
 }
 

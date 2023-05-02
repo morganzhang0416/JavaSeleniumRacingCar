@@ -1,7 +1,7 @@
-com/buggycar/utils/BaseTest.class
 com/buggycar/LoginTest.class
 com/buggycar/pageobjects/ProfilePage.class
 com/buggycar/pageobjects/VotePage.class
+com/buggycar/utils/Hook.class
 com/buggycar/pageobjects/RegisterPage.class
 com/buggycar/RegisterTest.class
 com/buggycar/pageobjects/LinkPage.class

@@ -3,69 +3,58 @@ package com.buggycar;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.assertEquals;
-import java.time.Duration;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import io.github.cdimascio.dotenv.Dotenv;
 import io.github.cdimascio.dotenv.DotenvBuilder;
 import com.buggycar.pageobjects.LoginPage;
 import com.buggycar.pageobjects.ProfilePage;
-import com.buggycar.utils.BaseTest;
+import com.buggycar.utils.Hook;
 import com.buggycar.utils.FileUtils;
-import com.buggycar.utils.WaitConditions;
 
-public class ProfileTest extends BaseTest{
+public class ProfileTest extends Hook{
 
   @Test(priority = 1)
   public void profileTest(){
       
     LoginPage loginPage = new LoginPage(driver);
     ProfilePage profilePage = new ProfilePage(driver);
-    WaitConditions wait = new WaitConditions(driver);
     DotenvBuilder dotenvBuilder = Dotenv.configure();
     Dotenv dotenv = dotenvBuilder.load();
-    String password = dotenv.get("PASSWORD");
     String fileName = "username.txt";
+    String password = dotenv.get("PASSWORD");
     String username = FileUtils.readLastLine(fileName);
     // Navigate to homepage
     driver.get(baseUrl + "/");
  
     // Type usrname into login form
-    loginPage.getUsernameInput().sendKeys(username);
+    loginPage.EnterUsername(username);
 
     // Type password into login form
-    
-    loginPage.getPasswordInput().sendKeys(password);
+    loginPage.EnterPassword(password);
     
     // click login button
-    loginPage.getLoginButton().click();
+    loginPage.ClickLoginButton();;
 
-    
-    wait.WaitLocatorClickable(By.linkText("Profile"),Duration.ofSeconds(8));
+    loginPage.WaitProfilePresent();
+
   
     // assert profile displayed that means login sucessfully
-
     assertTrue(loginPage.getProfileButton().isDisplayed());
     
-    loginPage.getProfileButton().click();
-
-       
-    wait.WaitLocatorVisibility(By.id("age"), Duration.ofSeconds(8));
+    loginPage.ClickProfileButton();
+     
+    profilePage.WaitAgePresent();
     //update age input field
-    profilePage.getAgeInput().clear();
-    profilePage.getAgeInput().sendKeys("95");
+    profilePage.EnterAge("95");
+   
     //update hobby dropdown list
-    Select select = new Select(profilePage.getHobbyList());
-    select.selectByVisibleText("Working");
+    profilePage.SlectHobbhy("Working");
 
-    profilePage.getSubmitButton().click();
-    
-    String expectedMessage = "The profile has been saved successful";
+    profilePage.ClickSubmitButton();
 
-    wait.WaitLocatorVisibility(By.cssSelector("div.result.alert.alert-success.hidden-md-down"), Duration.ofSeconds(8));
+    profilePage.WaitSuccessMessage();
     // assert successful infomation pop up
-    assertTrue(profilePage.getSuccessfulResult().isDisplayed(), "Success message is not displayed");
-    assertEquals(profilePage.getSuccessfulResult().getText().trim(), expectedMessage, "Success message text is not as expected");   
+    //assertTrue(profilePage.getSuccessfulResult().isDisplayed(), "Success message is not displayed");
+    assertEquals(profilePage.getSuccessfulResult(), profilePage.expectedMessage, "Success message text is not as expected");   
 
     }
 

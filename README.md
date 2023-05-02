@@ -38,6 +38,6 @@ You can download test report in your browser
 
 <img src="src/test/java/com/buggycar/resource/testreport.png" alt="Alt text" title="Optional title">
 
-if you want to run different browser in your own machine just change browser driver name from chrome to firefox or safari in BaseTest.java file.
+if you want to run different browser in your own machine just change browser driver name from chrome to firefox or safari in Hook.java file.
 
 Please note: you might need to click more page links if you read the bug report pdf on the browser. Thank you.
