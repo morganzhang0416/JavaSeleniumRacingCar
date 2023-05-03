@@ -31,14 +31,15 @@ public class Hook {
         
         if(browserName.equalsIgnoreCase("chrome")) {	 
             //Initializing the firefox driver (Gecko)
+            System.setProperty("webdriver.chrome.driver", chromeDriverPath.toString());	
             driver = new ChromeDriver();
-            System.setProperty("webdriver.chrome.driver", chromeDriverPath.toString());	  
+            System.out.println(chromeDriverPath.toString());
     
         }else if (browserName.equalsIgnoreCase("firefox")) {    
-            //Initialize the chrome driver    
-            
-            driver = new FirefoxDriver();
+            //Initialize the chrome driver                
             System.setProperty("webdriver.gecko.driver", firefoxDriverPath.toString());
+            driver = new FirefoxDriver();
+            System.out.println(firefoxDriverPath.toString());
      
         }
         // Set the base URL
