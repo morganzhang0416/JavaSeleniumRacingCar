@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests" thread-count="2">
+
+  <test name="test on chrome">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="com.buggycar.LinkTest"/>
+      <class name="com.buggycar.LoginTest"/>
+      <class name="com.buggycar.ProfileTest"/>
+      <class name="com.buggycar.RegisterTest"/>
+      <class name="com.buggycar.VoteTest"/>
+    </classes>
+  </test> <!-- Test1 -->
+  
+  <test name="test on firefox">
+  <parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="com.buggycar.LinkTest"/>
+      <class name="com.buggycar.LoginTest"/>
+      <class name="com.buggycar.ProfileTest"/>
+      <class name="com.buggycar.RegisterTest"/>
+
+    </classes>
+  </test> <!-- Test1 -->
+
+  
+
+</suite> <!-- Suite1 -->
