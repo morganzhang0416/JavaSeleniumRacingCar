@@ -23,23 +23,23 @@ public class Hook {
         String projectDir = System.getProperty("user.dir");
         
         // Construct the path to chromedriver
-        Path chromeDriverPath = Paths.get(projectDir, "driver", "chromedriver");
-        Path firefoxDriverPath = Paths.get(projectDir, "driver", "geckodriver");
+        // Path chromeDriverPath = Paths.get(projectDir, "driver", "chromedriver");
+        // Path firefoxDriverPath = Paths.get(projectDir, "driver", "geckodriver");
         // System.out.println(projectDir);
         // // Print the path to chromedriver
         // System.out.println(chromeDriverPath.toString());
         System.out.println(browserName.toString());
         if(browserName.equalsIgnoreCase("chrome")) {	 
             //Initializing the firefox driver (Gecko)
-            System.setProperty("webdriver.chrome.driver", chromeDriverPath.toString());	
-            System.out.println(chromeDriverPath.toString());
+            System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");	
+            
             driver = new ChromeDriver();
             
     
         }else if (browserName.equalsIgnoreCase("firefox")) {    
             //Initialize the chrome driver                
-            System.setProperty("webdriver.gecko.driver", firefoxDriverPath.toString());
-            System.out.println(firefoxDriverPath.toString());
+            System.setProperty("webdriver.gecko.driver", "./driver/geckodriver");
+
             driver = new FirefoxDriver();
             
         }
