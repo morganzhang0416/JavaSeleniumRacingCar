@@ -36,6 +36,7 @@ jobs:
           sudo mv geckodriver /usr/local/bin/geckodriver
           sudo chmod +x /usr/local/bin/geckodriver
 
+
       - uses: actions/checkout@v2
 
       - name: Set CHROMEDRIVER_PATH environment variable

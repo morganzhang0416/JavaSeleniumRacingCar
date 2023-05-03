@@ -25,7 +25,6 @@ public class Hook {
         // Construct the path to chromedriver
         Path chromeDriverPath = Paths.get(projectDir, "driver", "chromedriver");
         Path firefoxDriverPath = Paths.get(projectDir, "driver", "geckodriver");
-        Path msedgeDriverPath = Paths.get(projectDir, "driver", "msedgedriver");
         // System.out.println(projectDir);
         // // Print the path to chromedriver
         // System.out.println(chromeDriverPath.toString());
