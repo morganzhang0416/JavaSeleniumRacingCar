@@ -9,33 +9,36 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Install Chrome
         run: |
-          brew install --cask google-chrome
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt update
+          sudo apt install -y google-chrome-stable
 
       - name: Install Firefox
         run: |
-          brew install --cask firefox
+          sudo apt update
+          sudo apt install -y firefox
 
       - name: Install Chrome driver
         run: |
           LATEST_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
-          curl -L "https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_mac64.zip" -o chromedriver.zip
-          unzip chromedriver.zip
+          wget -q "https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
 
       - name: Install Firefox driver
         run: |
           LATEST_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep -oE '"tag_name": "v?[0-9]+\.[0-9]+\.[0-9]+" ' | cut -d'"' -f4)
-          curl -L "https://github.com/mozilla/geckodriver/releases/download/${LATEST_VERSION}/geckodriver-${LATEST_VERSION}-macos.tar.gz" -o geckodriver.tar.gz
-          tar -xzf geckodriver.tar.gz
+          wget -q "https://github.com/mozilla/geckodriver/releases/download/${LATEST_VERSION}/geckodriver-${LATEST_VERSION}-linux64.tar.gz"
+          tar -xzf geckodriver-${LATEST_VERSION}-linux64.tar.gz
           sudo mv geckodriver /usr/local/bin/geckodriver
           sudo chmod +x /usr/local/bin/geckodriver
-
 
       - uses: actions/checkout@v2
 
@@ -73,8 +76,4 @@ jobs:
       - name: Generate TestNG HTML report for Firefox
         run: mvn surefire-report:report-only -DbrowserName=firefox
 
-      - name: Publish TestNG report for Firefox as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: testng-report-firefox
-          path: target/site/surefire-report.html
+     
