@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite1" parallel="tests" thread-count="2">
+<suite name="BuggerCarSuite" parallel="tests" thread-count="2" preserve-order="true">
 
   <test name="test on chrome">
   <parameter name="browserName" value="chrome"></parameter>
@@ -11,8 +11,8 @@
       <class name="com.buggycar.RegisterTest"/>
       <class name="com.buggycar.VoteTest"/>
     </classes>
-  </test> <!-- Test1 -->
-  
+  </test> 
+  <!-- run 4 test class as VoteTest is not supported on firefox browser -->
   <test name="test on firefox">
   <parameter name="browserName" value="firefox"></parameter>
     <classes>
@@ -20,10 +20,6 @@
       <class name="com.buggycar.LoginTest"/>
       <class name="com.buggycar.ProfileTest"/>
       <class name="com.buggycar.RegisterTest"/>
-
     </classes>
-  </test> <!-- Test1 -->
-
-  
-
-</suite> <!-- Suite1 -->
+  </test> 
+</suite> 
