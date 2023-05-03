@@ -4,12 +4,15 @@ import org.testng.annotations.Test;
 import com.buggycar.pageobjects.LinkPage;
 import com.buggycar.utils.Hook;
 import static org.testng.Assert.assertTrue;
+import java.nio.file.Paths;
 
 // test for visit different link of home page
 public class LinkTest extends Hook{
     @Test(priority = 1)
     public void linkTest(){
         // Navigate to homepage
+        String currentPath = Paths.get("").toAbsolutePath().toString();
+        System.out.println("Link Current path: " + currentPath);
         LinkPage linkpage = new LinkPage(driver);
         driver.get(baseUrl + "/");
 
