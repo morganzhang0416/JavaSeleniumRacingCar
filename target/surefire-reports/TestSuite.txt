@@ -1,4 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.819 s - in TestSuite
+Tests run: 34, Failures: 9, Errors: 0, Skipped: 25, Time elapsed: 0.381 s <<< FAILURE! - in TestSuite
+setUp(com.buggycar.LoginTest)  Time elapsed: 0.259 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+
+setUp(com.buggycar.LoginTest)  Time elapsed: 0.26 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+
+setUp(com.buggycar.LinkTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+
+setUp(com.buggycar.LinkTest)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+
+setUp(com.buggycar.ProfileTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+
+setUp(com.buggycar.ProfileTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+
+setUp(com.buggycar.RegisterTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+
+setUp(com.buggycar.RegisterTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+
+setUp(com.buggycar.VoteTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+

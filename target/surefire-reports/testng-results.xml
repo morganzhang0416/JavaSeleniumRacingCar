@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="0" failed="0" skipped="17">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-03T21:02:54 NZST" name="BuggerCarSuite" finished-at="2023-05-03T21:03:23 NZST" duration-ms="29575">
+  <suite started-at="2023-05-03T22:22:39 NZST" name="BuggerCarSuite" finished-at="2023-05-03T22:22:39 NZST" duration-ms="59">
     <groups>
     </groups>
-    <test started-at="2023-05-03T21:02:54 NZST" name="test on chrome" finished-at="2023-05-03T21:03:20 NZST" duration-ms="26366">
+    <test started-at="2023-05-03T22:22:39 NZST" name="test on chrome" finished-at="2023-05-03T22:22:39 NZST" duration-ms="59">
       <class name="com.buggycar.RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T21:03:02 NZST" name="setUp" finished-at="2023-05-03T21:03:02 NZST" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -15,39 +15,144 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T21:03:02 NZST" name="registerTest" finished-at="2023-05-03T21:03:04 NZST" duration-ms="1100" status="PASS">
+        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T22:22:39 NZST" name="registerTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T21:03:04 NZST" name="tearDown" finished-at="2023-05-03T21:03:04 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@6e4784bc]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.RegisterTest -->
       <class name="com.buggycar.LinkTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:02:57 NZST" name="setUp" finished-at="2023-05-03T21:02:57 NZST" duration-ms="681" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:02:57 NZST" name="linkTest" finished-at="2023-05-03T21:02:58 NZST" duration-ms="919" status="PASS">
+        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="linkTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:02:58 NZST" name="tearDown" finished-at="2023-05-03T21:02:58 NZST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:04 NZST" name="setUp" finished-at="2023-05-03T21:03:04 NZST" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -55,39 +160,160 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:04 NZST" name="linkModelTest" finished-at="2023-05-03T21:03:05 NZST" duration-ms="926" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="linkModelTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkModelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:05 NZST" name="tearDown" finished-at="2023-05-03T21:03:05 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:07 NZST" name="setUp" finished-at="2023-05-03T21:03:08 NZST" duration-ms="655" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:08 NZST" name="linkOverallTest" finished-at="2023-05-03T21:03:09 NZST" duration-ms="945" status="PASS">
+        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="linkOverallTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkOverallTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T21:03:09 NZST" name="tearDown" finished-at="2023-05-03T21:03:09 NZST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@197d671]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- com.buggycar.LinkTest -->
       <class name="com.buggycar.ProfileTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T21:02:58 NZST" name="setUp" finished-at="2023-05-03T21:02:59 NZST" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -95,20 +321,100 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T21:02:59 NZST" name="profileTest" finished-at="2023-05-03T21:03:02 NZST" duration-ms="2756" status="PASS">
+        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T22:22:39 NZST" name="profileTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T21:03:02 NZST" name="tearDown" finished-at="2023-05-03T21:03:02 NZST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@5a63f509]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.ProfileTest -->
       <class name="com.buggycar.VoteTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T21:03:11 NZST" name="setUp" finished-at="2023-05-03T21:03:12 NZST" duration-ms="663" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -116,20 +422,100 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="voteTest()[pri:10, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T21:03:12 NZST" name="voteTest" finished-at="2023-05-03T21:03:20 NZST" duration-ms="8175" status="PASS">
+        <test-method signature="voteTest()[pri:10, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T22:22:39 NZST" name="voteTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voteTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T21:03:20 NZST" name="tearDown" finished-at="2023-05-03T21:03:20 NZST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.VoteTest@34b7ac2f]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.VoteTest -->
       <class name="com.buggycar.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:02:54 NZST" name="setUp" finished-at="2023-05-03T21:02:55 NZST" duration-ms="1133" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="33" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -137,60 +523,206 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:02:55 NZST" name="correctCredentialTest" finished-at="2023-05-03T21:02:56 NZST" duration-ms="1602" status="PASS">
+        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="correctCredentialTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:02:56 NZST" name="tearDown" finished-at="2023-05-03T21:02:57 NZST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:05 NZST" name="setUp" finished-at="2023-05-03T21:03:06 NZST" duration-ms="688" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:06 NZST" name="wrongCredentialTest" finished-at="2023-05-03T21:03:07 NZST" duration-ms="911" status="PASS">
+        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="wrongCredentialTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:07 NZST" name="tearDown" finished-at="2023-05-03T21:03:07 NZST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:09 NZST" name="setUp" finished-at="2023-05-03T21:03:09 NZST" duration-ms="659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:09 NZST" name="logoutTest" finished-at="2023-05-03T21:03:11 NZST" duration-ms="1557" status="PASS">
+        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="logoutTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:98)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.buggycar.utils.Hook.setUp(Hook.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T21:03:11 NZST" name="tearDown" finished-at="2023-05-03T21:03:11 NZST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@29626d54]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- com.buggycar.LoginTest -->
     </test> <!-- test on chrome -->
-    <test started-at="2023-05-03T21:02:54 NZST" name="test on firefox" finished-at="2023-05-03T21:03:23 NZST" duration-ms="29575">
+    <test started-at="2023-05-03T22:22:39 NZST" name="test on firefox" finished-at="2023-05-03T22:22:39 NZST" duration-ms="58">
       <class name="com.buggycar.RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T21:03:05 NZST" name="setUp" finished-at="2023-05-03T21:03:07 NZST" duration-ms="1188" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -198,39 +730,147 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T21:03:07 NZST" name="registerTest" finished-at="2023-05-03T21:03:08 NZST" duration-ms="1249" status="PASS">
+        <test-method signature="registerTest()[pri:1, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T22:22:39 NZST" name="registerTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T21:03:08 NZST" name="tearDown" finished-at="2023-05-03T21:03:09 NZST" duration-ms="1204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.RegisterTest@6e171cd7]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.RegisterTest -->
       <class name="com.buggycar.LinkTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:02:58 NZST" name="setUp" finished-at="2023-05-03T21:02:59 NZST" duration-ms="1177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:02:59 NZST" name="linkTest" finished-at="2023-05-03T21:03:00 NZST" duration-ms="1406" status="PASS">
+        <test-method signature="linkTest()[pri:1, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="linkTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:00 NZST" name="tearDown" finished-at="2023-05-03T21:03:01 NZST" duration-ms="936" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:09 NZST" name="setUp" finished-at="2023-05-03T21:03:10 NZST" duration-ms="1131" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -238,39 +878,163 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:10 NZST" name="linkModelTest" finished-at="2023-05-03T21:03:12 NZST" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="linkModelTest()[pri:2, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="linkModelTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkModelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:12 NZST" name="tearDown" finished-at="2023-05-03T21:03:13 NZST" duration-ms="1025" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:16 NZST" name="setUp" finished-at="2023-05-03T21:03:17 NZST" duration-ms="1186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:17 NZST" name="linkOverallTest" finished-at="2023-05-03T21:03:19 NZST" duration-ms="1190" status="PASS">
+        <test-method signature="linkOverallTest()[pri:3, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="linkOverallTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkOverallTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T21:03:19 NZST" name="tearDown" finished-at="2023-05-03T21:03:20 NZST" duration-ms="1159" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LinkTest@1cbbffcd]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- com.buggycar.LinkTest -->
       <class name="com.buggycar.ProfileTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T21:03:01 NZST" name="setUp" finished-at="2023-05-03T21:03:02 NZST" duration-ms="1252" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -278,20 +1042,102 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T21:03:02 NZST" name="profileTest" finished-at="2023-05-03T21:03:05 NZST" duration-ms="2888" status="PASS">
+        <test-method signature="profileTest()[pri:1, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T22:22:39 NZST" name="profileTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T21:03:05 NZST" name="tearDown" finished-at="2023-05-03T21:03:05 NZST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.ProfileTest@498d318c]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.buggycar.ProfileTest -->
       <class name="com.buggycar.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:02:54 NZST" name="setUp" finished-at="2023-05-03T21:02:55 NZST" duration-ms="1453" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="33" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -299,52 +1145,202 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:02:55 NZST" name="correctCredentialTest" finished-at="2023-05-03T21:02:57 NZST" duration-ms="1793" status="PASS">
+        <test-method signature="correctCredentialTest()[pri:1, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="correctCredentialTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:02:57 NZST" name="tearDown" finished-at="2023-05-03T21:02:58 NZST" duration-ms="613" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:13 NZST" name="setUp" finished-at="2023-05-03T21:03:14 NZST" duration-ms="1090" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:14 NZST" name="wrongCredentialTest" finished-at="2023-05-03T21:03:15 NZST" duration-ms="1180" status="PASS">
+        <test-method signature="wrongCredentialTest()[pri:2, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="wrongCredentialTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongCredentialTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:15 NZST" name="tearDown" finished-at="2023-05-03T21:03:16 NZST" duration-ms="1241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:20 NZST" name="setUp" finished-at="2023-05-03T21:03:21 NZST" duration-ms="1097" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:21 NZST" name="logoutTest" finished-at="2023-05-03T21:03:23 NZST" duration-ms="1671" status="PASS">
+        <test-method signature="logoutTest()[pri:3, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="logoutTest" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
+at com.buggycar.utils.Hook.setUp(Hook.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1589)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T21:03:23 NZST" name="tearDown" finished-at="2023-05-03T21:03:23 NZST" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="setUp" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.buggycar.LoginTest@40ef3420]" started-at="2023-05-03T22:22:39 NZST" name="tearDown" finished-at="2023-05-03T22:22:39 NZST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

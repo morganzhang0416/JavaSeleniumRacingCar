@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [BuggerCarSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="test on chrome(failed)" verbose="0">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.buggycar.LinkTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="linkModelTest"/>
+          <include name="tearDown"/>
+          <include name="linkTest"/>
+          <include name="linkOverallTest"/>
+        </methods>
+      </class> <!-- com.buggycar.LinkTest -->
+      <class name="com.buggycar.ProfileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="profileTest"/>
+        </methods>
+      </class> <!-- com.buggycar.ProfileTest -->
+      <class name="com.buggycar.VoteTest">
+        <methods>
+          <include name="voteTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buggycar.VoteTest -->
+      <class name="com.buggycar.LoginTest">
+        <methods>
+          <include name="wrongCredentialTest"/>
+          <include name="setUp"/>
+          <include name="correctCredentialTest"/>
+          <include name="tearDown"/>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.buggycar.LoginTest -->
+      <class name="com.buggycar.RegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registerTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buggycar.RegisterTest -->
+    </classes>
+  </test> <!-- test on chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="test on firefox(failed)" verbose="0">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.buggycar.LinkTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="linkModelTest"/>
+          <include name="tearDown"/>
+          <include name="linkTest"/>
+          <include name="linkOverallTest"/>
+        </methods>
+      </class> <!-- com.buggycar.LinkTest -->
+      <class name="com.buggycar.ProfileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="profileTest"/>
+        </methods>
+      </class> <!-- com.buggycar.ProfileTest -->
+      <class name="com.buggycar.LoginTest">
+        <methods>
+          <include name="wrongCredentialTest"/>
+          <include name="setUp"/>
+          <include name="correctCredentialTest"/>
+          <include name="tearDown"/>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.buggycar.LoginTest -->
+      <class name="com.buggycar.RegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="registerTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.buggycar.RegisterTest -->
+    </classes>
+  </test> <!-- test on firefox(failed) -->
+</suite> <!-- Failed suite [BuggerCarSuite] -->

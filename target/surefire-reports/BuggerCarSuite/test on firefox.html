@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>test on firefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/8</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 03 21:02:54 NZST 2023</td>
+<td>Started on:</td><td>Wed May 03 22:22:39 NZST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29575 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (58 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,44 +76,678 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.buggycar.ProfileTest.profileTest()'><b>profileTest</b><br>Test class: com.buggycar.ProfileTest</td>
-<td></td>
-<td>2</td>
-<td>com.buggycar.ProfileTest@498d318c</td></tr>
-<tr>
-<td title='com.buggycar.LinkTest.linkOverallTest()'><b>linkOverallTest</b><br>Test class: com.buggycar.LinkTest</td>
-<td></td>
-<td>1</td>
-<td>com.buggycar.LinkTest@1cbbffcd</td></tr>
-<tr>
-<td title='com.buggycar.RegisterTest.registerTest()'><b>registerTest</b><br>Test class: com.buggycar.RegisterTest</td>
-<td></td>
-<td>1</td>
-<td>com.buggycar.RegisterTest@6e171cd7</td></tr>
-<tr>
-<td title='com.buggycar.LoginTest.wrongCredentialTest()'><b>wrongCredentialTest</b><br>Test class: com.buggycar.LoginTest</td>
-<td></td>
-<td>1</td>
+<td title='com.buggycar.LoginTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LoginTest<br>Parameters: firefox</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952534783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace952534783'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
 <td>com.buggycar.LoginTest@40ef3420</td></tr>
 <tr>
-<td title='com.buggycar.LinkTest.linkTest()'><b>linkTest</b><br>Test class: com.buggycar.LinkTest</td>
+<td title='com.buggycar.RegisterTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.RegisterTest<br>Parameters: firefox</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1983122909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1983122909'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.RegisterTest@6e171cd7</td></tr>
+<tr>
+<td title='com.buggycar.ProfileTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.ProfileTest<br>Parameters: firefox</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997391654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997391654'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.ProfileTest@498d318c</td></tr>
+<tr>
+<td title='com.buggycar.LinkTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LinkTest<br>Parameters: firefox</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1894504741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1894504741'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.LinkTest@1cbbffcd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.buggycar.LinkTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LinkTest</td>
 <td></td>
-<td>1</td>
+<td>0</td>
+<td>com.buggycar.LinkTest@1cbbffcd</td></tr>
+<tr>
+<td title='com.buggycar.LoginTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.buggycar.LoginTest@40ef3420</td></tr>
+<tr>
+<td title='com.buggycar.LinkTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LinkTest</td>
+<td></td>
+<td>0</td>
+<td>com.buggycar.LinkTest@1cbbffcd</td></tr>
+<tr>
+<td title='com.buggycar.LoginTest.setUp()'><b>setUp</b><br>Test class: com.buggycar.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.buggycar.LoginTest@40ef3420</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.buggycar.RegisterTest.registerTest()'><b>registerTest</b><br>Test class: com.buggycar.RegisterTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103575196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103575196'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.RegisterTest@6e171cd7</td></tr>
+<tr>
+<td title='com.buggycar.ProfileTest.profileTest()'><b>profileTest</b><br>Test class: com.buggycar.ProfileTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10974805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10974805'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.ProfileTest@498d318c</td></tr>
+<tr>
+<td title='com.buggycar.LinkTest.linkTest()'><b>linkTest</b><br>Test class: com.buggycar.LinkTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2126422120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2126422120'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
 <td>com.buggycar.LinkTest@1cbbffcd</td></tr>
 <tr>
 <td title='com.buggycar.LinkTest.linkModelTest()'><b>linkModelTest</b><br>Test class: com.buggycar.LinkTest</td>
-<td></td>
-<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277874454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace277874454'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
 <td>com.buggycar.LinkTest@1cbbffcd</td></tr>
 <tr>
-<td title='com.buggycar.LoginTest.logoutTest()'><b>logoutTest</b><br>Test class: com.buggycar.LoginTest</td>
-<td></td>
-<td>1</td>
+<td title='com.buggycar.LoginTest.wrongCredentialTest()'><b>wrongCredentialTest</b><br>Test class: com.buggycar.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace307607538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307607538'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
 <td>com.buggycar.LoginTest@40ef3420</td></tr>
 <tr>
+<td title='com.buggycar.LoginTest.logoutTest()'><b>logoutTest</b><br>Test class: com.buggycar.LoginTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835724301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835724301'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.LoginTest@40ef3420</td></tr>
+<tr>
+<td title='com.buggycar.LinkTest.linkOverallTest()'><b>linkOverallTest</b><br>Test class: com.buggycar.LinkTest</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994685173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994685173'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.buggycar.LinkTest@1cbbffcd</td></tr>
+<tr>
 <td title='com.buggycar.LoginTest.correctCredentialTest()'><b>correctCredentialTest</b><br>Test class: com.buggycar.LoginTest</td>
-<td></td>
-<td>1</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1302417804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1302417804'><pre>java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:39)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:139)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:131)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
+	at com.buggycar.utils.Hook.setUp(Hook.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
 <td>com.buggycar.LoginTest@40ef3420</td></tr>
 </table><p>
 </body>
