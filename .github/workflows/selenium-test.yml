@@ -30,7 +30,7 @@ jobs:
 
       - name: Install Firefox driver
         run: |
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep -oE '"tag_name": "v?[0-9]+\.[0-9]+\.[0-9]+" ' | cut -d'"' -f4)
           curl -L "https://github.com/mozilla/geckodriver/releases/download/${LATEST_VERSION}/geckodriver-${LATEST_VERSION}-macos.tar.gz" -o geckodriver.tar.gz
           tar -xzf geckodriver.tar.gz
           sudo mv geckodriver /usr/local/bin/geckodriver
@@ -54,8 +54,8 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Run tests on Chrome
-        run: mvn test -Dtestng.dtd.http=true -DbrowserName=chrome
+      - name: Run tests on Chrome in headless mode
+        run: mvn test -Dtestng.dtd.http=true -DbrowserName=chrome -Dheadless=true
 
       - name: Generate TestNG HTML report for Chrome
         run: mvn surefire-report:report-only -DbrowserName=chrome
@@ -66,8 +66,8 @@ jobs:
           name: testng-report-chrome
           path: target/site/surefire-report.html
 
-      - name: Run tests on Firefox
-        run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox
+      - name: Run tests on Firefox in headless mode
+          run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox -Dheadless=true
 
       - name: Generate TestNG HTML report for Firefox
         run: mvn surefire-report:report-only -DbrowserName=firefox
