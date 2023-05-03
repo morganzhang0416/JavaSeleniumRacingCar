@@ -67,7 +67,7 @@ jobs:
           path: target/site/surefire-report.html
 
       - name: Run tests on Firefox in headless mode
-          run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox -Dheadless=true
+        run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox -Dheadless=true
 
       - name: Generate TestNG HTML report for Firefox
         run: mvn surefire-report:report-only -DbrowserName=firefox
