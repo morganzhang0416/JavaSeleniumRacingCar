@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+import java.nio.file.Paths;
 
 
 // setup and quite browser in each test case
@@ -26,6 +27,8 @@ public class Hook {
         // System.out.println(projectDir);
         // // Print the path to chromedriver
         // System.out.println(chromeDriverPath.toString());
+        String currentPath = Paths.get("").toAbsolutePath().toString();
+        System.out.println("Current path: " + currentPath);
         System.out.println(System.getProperty("user.dir"));
         if(browserName.equalsIgnoreCase("chrome")) {	 
             //Initializing the firefox driver (Gecko)
