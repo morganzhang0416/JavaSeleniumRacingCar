@@ -28,19 +28,20 @@ public class Hook {
         // System.out.println(projectDir);
         // // Print the path to chromedriver
         // System.out.println(chromeDriverPath.toString());
-        
+        System.out.println(browserName.toString());
         if(browserName.equalsIgnoreCase("chrome")) {	 
             //Initializing the firefox driver (Gecko)
             System.setProperty("webdriver.chrome.driver", chromeDriverPath.toString());	
-            driver = new ChromeDriver();
             System.out.println(chromeDriverPath.toString());
+            driver = new ChromeDriver();
+            
     
         }else if (browserName.equalsIgnoreCase("firefox")) {    
             //Initialize the chrome driver                
             System.setProperty("webdriver.gecko.driver", firefoxDriverPath.toString());
-            driver = new FirefoxDriver();
             System.out.println(firefoxDriverPath.toString());
-     
+            driver = new FirefoxDriver();
+            
         }
         // Set the base URL
         baseUrl = "https://buggy.justtestit.org";
