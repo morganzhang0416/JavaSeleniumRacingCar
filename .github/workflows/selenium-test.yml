@@ -16,6 +16,10 @@ jobs:
         run: |
           brew install --cask google-chrome
 
+      - name: Install Firefox
+        run: |
+          brew install --cask firefox
+
       - name: Install Chrome driver
         run: |
           LATEST_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
@@ -24,10 +28,21 @@ jobs:
           sudo mv chromedriver /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
 
+      - name: Install Firefox driver
+        run: |
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+          curl -L "https://github.com/mozilla/geckodriver/releases/download/${LATEST_VERSION}/geckodriver-${LATEST_VERSION}-macos.tar.gz" -o geckodriver.tar.gz
+          tar -xzf geckodriver.tar.gz
+          sudo mv geckodriver /usr/local/bin/geckodriver
+          sudo chmod +x /usr/local/bin/geckodriver
+
       - uses: actions/checkout@v2
 
       - name: Set CHROMEDRIVER_PATH environment variable
         run: echo "CHROMEDRIVER_PATH=/usr/local/bin/chromedriver" >> $GITHUB_ENV
+
+      - name: Set GECKODRIVER_PATH environment variable
+        run: echo "GECKODRIVER_PATH=/usr/local/bin/geckodriver" >> $GITHUB_ENV
 
       - name: Set up JDK 11
         uses: actions/setup-java@v2
@@ -39,14 +54,26 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Run tests in headless mode
-        run: mvn test -Dtestng.dtd.http=true -Dsurefire.headless=true
+      - name: Run tests on Chrome
+        run: mvn test -Dtestng.dtd.http=true -DbrowserName=chrome
 
-      - name: Generate TestNG XML report
-        run: mvn surefire-report:report-only
+      - name: Generate TestNG HTML report for Chrome
+        run: mvn surefire-report:report-only -DbrowserName=chrome
 
-      - name: Publish TestNG report as artifact
+      - name: Publish TestNG report for Chrome as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: testng-report
+          name: testng-report-chrome
+          path: target/site/surefire-report.html
+
+      - name: Run tests on Firefox
+        run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox
+
+      - name: Generate TestNG HTML report for Firefox
+        run: mvn surefire-report:report-only -DbrowserName=firefox
+
+      - name: Publish TestNG report for Firefox as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: testng-report-firefox
           path: target/site/surefire-report.html
