@@ -12,8 +12,22 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Install Chrome
+        run: |
+          brew install --cask google-chrome
+
+      - name: Install Chrome driver
+        run: |
+          LATEST_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          curl -L "https://chromedriver.storage.googleapis.com/${LATEST_VERSION}/chromedriver_mac64.zip" -o chromedriver.zip
+          unzip chromedriver.zip
+          sudo mv chromedriver /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
 
       - uses: actions/checkout@v2
+
+      - name: Set CHROMEDRIVER_PATH environment variable
+        run: echo "CHROMEDRIVER_PATH=/usr/local/bin/chromedriver" >> $GITHUB_ENV
 
       - name: Set up JDK 11
         uses: actions/setup-java@v2
@@ -22,41 +36,17 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Install Chrome and Firefox drivers
-        run: |
-          curl -sSL https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o chrome.deb
-          sudo apt install ./chrome.deb
-          sudo apt-get update && sudo apt-get install -y firefox
-          curl -sSL https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz | tar -xz
-          sudo mv geckodriver /usr/local/bin
-          sudo chmod +x /usr/local/bin/geckodriver
-          curl -sSL https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_linux64.zip -o chromedriver.zip
-          unzip chromedriver.zip -d /usr/local/bin
-          sudo chmod +x /usr/local/bin/chromedriver
-
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Run tests on Chrome in headless mode
-        run: mvn test -Dtestng.dtd.http=true -DbrowserName=chrome -Dheadless=true -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver
+      - name: Run tests in headless mode
+        run: mvn test -Dtestng.dtd.http=true -Dsurefire.headless=true
 
-      - name: Generate TestNG HTML report for Chrome
-        run: mvn surefire-report:report-only -DbrowserName=chrome
+      - name: Generate TestNG XML report
+        run: mvn surefire-report:report-only
 
-      - name: Publish TestNG report for Chrome as artifact
+      - name: Publish TestNG report as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: testng-report-chrome
-          path: target/site/surefire-report.html
-
-      - name: Run tests on Firefox in headless mode
-        run: mvn test -Dtestng.dtd.http=true -DbrowserName=firefox -Dheadless=true -Dwebdriver.gecko.driver=/usr/local/bin/geckodriver
-
-      - name: Generate TestNG HTML report for Firefox
-        run: mvn surefire-report:report-only -DbrowserName=firefox
-
-      - name: Publish TestNG report for Firefox as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: testng-report-firefox
+          name: testng-report
           path: target/site/surefire-report.html
