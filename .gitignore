@@ -1,0 +1,24 @@
+# Compiled class files
+**/*.class
+
+# Logs and databases
+**/log/
+**/database/
+
+# Build directories
+**/target/
+**/out/
+
+# Maven Ignores
+log/
+target/
+*.iml
+.idea/
+
+# Other unnecessary files
+*.log
+*.tmp
+*.bak
+
+
+

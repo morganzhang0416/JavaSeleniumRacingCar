@@ -20,6 +20,7 @@
       <class name="com.buggycar.LoginTest"/>
       <class name="com.buggycar.ProfileTest"/>
       <class name="com.buggycar.RegisterTest"/>
+      <class name="com.buggycar.VoteTest"/>
     </classes>
   </test> 
 </suite> 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.381" tests="34" errors="0" skipped="25" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="30.105" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="NZ"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/tmp/Java_selenium/demo/target/surefire/surefirebooter14596850841071412229.jar /Users/tmp/Java_selenium/demo/target/surefire 2023-05-03T22-22-39_472-jvmRun1 surefire767645843517172845tmp surefire_017692297653108525860tmp"/>
+    <property name="sun.java.command" value="/Users/tmp/Java_selenium/demo/target/surefire/surefirebooter17325987995961638057.jar /Users/tmp/Java_selenium/demo/target/surefire 2023-05-10T12-10-23_408-jvmRun1 surefire17992441097096289944tmp surefire_017703461655243592311tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/tmp/Java_selenium/demo/target/test-classes:/Users/tmp/Java_selenium/demo/target/classes:/Users/tmp/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/tmp/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/tmp/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.3/selenium-java-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.3/selenium-devtools-v109-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.3/selenium-devtools-v110-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v111/4.8.3/selenium-devtools-v111-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.3/selenium-devtools-v85-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.3/selenium-edge-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.3/selenium-firefox-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.3/selenium-http-4.8.3.jar:/Users/tmp/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.3/selenium-ie-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.3/selenium-remote-driver-4.8.3.jar:/Users/tmp/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/tmp/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/tmp/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/tmp/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/tmp/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/tmp/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/tmp/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/tmp/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/tmp/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/tmp/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/tmp/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.3/selenium-safari-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.3/selenium-support-4.8.3.jar:/Users/tmp/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/tmp/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/tmp/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/tmp/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/tmp/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/tmp/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/tmp/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/tmp/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/tmp/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/tmp/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/tmp/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.3/selenium-json-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.3/selenium-chromium-driver-4.8.3.jar:/Users/tmp/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.3/selenium-manager-4.8.3.jar:/Users/tmp/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/tmp/.m2/repository/org/slf4j/slf4j-simple/2.0.7/slf4j-simple-2.0.7.jar:/Users/tmp/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/tmp/.m2/repository/io/github/cdimascio/dotenv-java/2.3.2/dotenv-java-2.3.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/tmp/Java_selenium/demo/target/surefire/surefirebooter14596850841071412229.jar"/>
+    <property name="surefire.real.class.path" value="/Users/tmp/Java_selenium/demo/target/surefire/surefirebooter17325987995961638057.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2"/>
@@ -58,129 +58,21 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0.259">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
-</failure>
-    <system-out><![CDATA[chrome
-firefox
-]]></system-out>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0.26">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
-</failure>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LoginTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="correctCredentialTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="correctCredentialTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0.002">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
-</failure>
-    <system-out><![CDATA[firefox
-chrome
-]]></system-out>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0.002">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
-</failure>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.LinkTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="linkTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="linkTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.ProfileTest" time="0.001">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
-</failure>
-    <system-out><![CDATA[firefox
-chrome
-]]></system-out>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.ProfileTest" time="0.001">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
-</failure>
-  </testcase>
-  <testcase name="profileTest" classname="com.buggycar.ProfileTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="profileTest" classname="com.buggycar.ProfileTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.RegisterTest" time="0.001">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
-</failure>
-    <system-out><![CDATA[chrome
-firefox
-]]></system-out>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.RegisterTest" time="0.001">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1
-</failure>
-  </testcase>
-  <testcase name="registerTest" classname="com.buggycar.RegisterTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="registerTest" classname="com.buggycar.RegisterTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="linkModelTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="linkModelTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="wrongCredentialTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="wrongCredentialTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="linkOverallTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="linkOverallTest" classname="com.buggycar.LinkTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="logoutTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
-  <testcase name="logoutTest" classname="com.buggycar.LoginTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/geckodriver1"/>
-  </testcase>
-  <testcase name="setUp" classname="com.buggycar.VoteTest" time="0.001">
-    <failure message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1
-</failure>
-    <system-out><![CDATA[chrome
-]]></system-out>
-  </testcase>
-  <testcase name="voteTest" classname="com.buggycar.VoteTest" time="0">
-    <skipped message="The driver executable must exist: /Users/tmp/Java_selenium/demo/./driver/chromedriver1"/>
-  </testcase>
+  <testcase name="correctCredentialTest" classname="com.buggycar.LoginTest" time="1.441"/>
+  <testcase name="correctCredentialTest" classname="com.buggycar.LoginTest" time="1.443"/>
+  <testcase name="linkTest" classname="com.buggycar.LinkTest" time="0.966"/>
+  <testcase name="linkTest" classname="com.buggycar.LinkTest" time="0.771"/>
+  <testcase name="profileTest" classname="com.buggycar.ProfileTest" time="2.614"/>
+  <testcase name="profileTest" classname="com.buggycar.ProfileTest" time="1.947"/>
+  <testcase name="registerTest" classname="com.buggycar.RegisterTest" time="1.134"/>
+  <testcase name="registerTest" classname="com.buggycar.RegisterTest" time="1.426"/>
+  <testcase name="linkModelTest" classname="com.buggycar.LinkTest" time="0.974"/>
+  <testcase name="linkModelTest" classname="com.buggycar.LinkTest" time="1.196"/>
+  <testcase name="wrongCredentialTest" classname="com.buggycar.LoginTest" time="1.037"/>
+  <testcase name="wrongCredentialTest" classname="com.buggycar.LoginTest" time="1.395"/>
+  <testcase name="linkOverallTest" classname="com.buggycar.LinkTest" time="0.95"/>
+  <testcase name="linkOverallTest" classname="com.buggycar.LinkTest" time="1.35"/>
+  <testcase name="logoutTest" classname="com.buggycar.LoginTest" time="1.587"/>
+  <testcase name="logoutTest" classname="com.buggycar.LoginTest" time="1.729"/>
+  <testcase name="voteTest" classname="com.buggycar.VoteTest" time="3.235"/>
 </testsuite>

@@ -40,15 +40,11 @@ public class LoginTest extends Hook{
     driver.get(baseUrl + "/");
     // Type usrname into login form
     loginPage.EnterUsername(username);
-
     // Type password into login form
     loginPage.EnterPassword(password);
-
     // click login button
     loginPage.ClickLoginButton();
-    
-    loginPage.WaitProfilePresent();
-        
+    loginPage.WaitProfilePresent();    
     // assert profile displayed that means login sucessfully
     assertTrue(loginPage.getProfileButton().isDisplayed());
    }
