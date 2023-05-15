@@ -41,3 +41,9 @@ You can download test report in your browser
 This repo run 2 browsers(chrome and firefox) parallelly. the configuration you can follow the testng.xml and hook.java file
 
 Please note: you might need to click more page links if you read the bug report pdf on the browser. Thank you.
+
+By the way, you need to create an .env file at root of the repo and create the following parameters(repace xxx with your own infomation)
+USERNAMEPREFIX=xxx
+PASSWORD=xxx
+FIRSTNAME=xxx
+LASTNAME=xxx
