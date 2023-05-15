@@ -38,6 +38,6 @@ You can download test report in your browser
 
 <img src="src/test/java/com/buggycar/resource/testreport.png" alt="Alt text" title="Optional title">
 
-This repo run 2 browsers(chrome and firefox) parellel. the configuration you can follow the testng.xml and hook.java file
+This repo run 2 browsers(chrome and firefox) parallelly. the configuration you can follow the testng.xml and hook.java file
 
 Please note: you might need to click more page links if you read the bug report pdf on the browser. Thank you.
