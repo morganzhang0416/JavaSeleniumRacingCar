@@ -8,12 +8,17 @@
 
 # Maven Ignores
 /target/
-.env
+
 
 # Other unnecessary files
+.env
+.vscode/
+.DS_Store
 *.log
 *.tmp
 *.bak
+
+
 
 
 
